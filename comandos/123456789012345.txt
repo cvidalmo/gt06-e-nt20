@@ -1,1 +1,1 @@
-0
+coloque o comando aqui, no lugar dessa linha e renomeie esse arquivo para o número do IMEI do equipamento.
