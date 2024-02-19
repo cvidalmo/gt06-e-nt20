@@ -47,7 +47,7 @@ var server = net.createServer((socket) => {
             console.log(idx.toString()+' - '+msg.rowLog);
 
             //Envio de comandos do servidor ao equipamento.
-            //BLOQUEIO (RELAY,1#), DESBLOQUEIO (RELAY,0#), PEDIDO DE INFORMAÇÔES (WHERE#), ...
+            //BLOQUEIO (DYD,000000#), DESBLOQUEIO (HFYD,000000#), INFORMAÇÔES (DWXX,000000#), VERSÃO (VERSION#), ...
             if (msg.expectsCommand) {
                socket.write(msg.commandMsg);
             } 
